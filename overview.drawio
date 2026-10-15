@@ -1,401 +1,54 @@
-<mxfile host="app.diagrams.net" agent="cecz-research" pages="4">
-  <diagram id="jOD_NUGSlhwshyfosAlc" name="① 系统·数据·流向总图">
-    <mxGraphModel dx="2200" dy="1200" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3060" pageHeight="2090" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="b2" value="全公司 · 系统 / 数据 / 流向总图（v0.5 · 2026-10 草案）　　依据：SOP 核实 + 实测 + 往来确认" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=20;align=left;verticalAlign=top;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="2980" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="b3" value="箭头（同步方式）：—— 实线 ＝ 系统 API / 自动对接 ｜ – – 长虚线 ＝ 自动导出 / 导入（含会话自动化） ｜ - - 短虚线 ＝ 人工（邮件 / 网页 / 扫码操作） ｜ ···· 点线 ＝ 规划 / 未接通&lt;br&gt;虚线大框 ＝ 责任边界 ｜ ★ ＝ 该数据项的源头（其余为副本 / 加工） ｜ 颜色 ＝ 归属域（蓝=外部 绿=Ghibli 橙=CECZ·Vác 黄=台账）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="78" width="2980" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="g4" value="① 外部 · 客户 / 平台（数据起点）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=6 4;align=left;verticalAlign=top;fontSize=15;fontStyle=1;spacingLeft=10;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="40" y="170" width="2980" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="b5" value="&lt;b&gt;SHEIN 平台（门户 / 开放平台）&lt;/b&gt;&lt;br&gt;· 运输单（transport ref）&lt;br&gt;· 收货点 / 装箱要求&lt;br&gt;· #273 / #216 回传接收（清关 / 税）&lt;br&gt;· financial portal（文件）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="230" width="690" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="b6" value="&lt;b&gt;TEMU 平台&lt;/b&gt;&lt;br&gt;· 预告（TruckBooking 等）&lt;br&gt;· 装箱 / 装车要求&lt;br&gt;· 对账口径" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="770" y="230" width="690" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="b7" value="&lt;b&gt;Cainiao / 4PX / AliExpress&lt;/b&gt;&lt;br&gt;· MAWB 预告&lt;br&gt;· 清单（manifest）&lt;br&gt;· OSS 下载链接" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="230" width="690" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="b8" value="&lt;b&gt;JD 平台（iFOP / DC / ighub）&lt;/b&gt;&lt;br&gt;· 采购 / 出库单（PI / SO）&lt;br&gt;· Crossdock 清单&lt;br&gt;· instock / outstock 导出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2190" y="230" width="750" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="g9" value="② 外部 · 服务与监管" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=6 4;align=left;verticalAlign=top;fontSize=15;fontStyle=1;spacingLeft=10;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="40" y="560" width="480" height="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="b10" value="&lt;b&gt;航司 / 地服&lt;/b&gt;&lt;br&gt;Menzies · AS · Celebi&lt;br&gt;· 航班到达（AOA）&lt;br&gt;· 装板 / BUP · 到货通知" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="655" width="440" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="b11" value="&lt;b&gt;NAV（匈牙利海关）&lt;/b&gt;&lt;br&gt;· ★MRN · ★放行 / 查验&lt;br&gt;· ★Vámhatározat（决定书）&lt;br&gt;· ★e-Vám azonosító&lt;br&gt;· ★税额（关税 / VAT）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="840" width="440" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="b12" value="&lt;b&gt;Gemeric（清关处理 · IOSS）&lt;/b&gt;&lt;br&gt;· ★szemle 清单&lt;br&gt;· ★申报处理 / e-Vám 标识&lt;br&gt;· 清关文件流转（határozat）&lt;br&gt;· 与 Ghibli 邮件交互" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1080" width="440" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="b13" value="&lt;b&gt;铁路 / 卡车 / 快递&lt;/b&gt;&lt;br&gt;· 班列 / 集装箱&lt;br&gt;· 卡车预约 / 车牌&lt;br&gt;· 快递面单（GLS 等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1370" width="440" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="g14" value="③ Ghibli · BUD（机场线）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=6 4;align=left;verticalAlign=top;fontSize=15;fontStyle=1;spacingLeft=10;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="540" y="560" width="900" height="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="b15" value="&lt;b&gt;邮件链（Ghibli 公共邮箱）&lt;/b&gt;&lt;br&gt;· 预告 / 到货 / 查验 / 清关完成邮件&lt;br&gt;· Betár / 装车协调&lt;br&gt;· 清关文件挂钩：人工上传 SHEIN portal（现状）&lt;br&gt;· （一手事件源）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="560" y="620" width="860" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="b16" value="&lt;b&gt;ParStock（Portal + APP · Régens 体系）&lt;/b&gt;&lt;br&gt;· Portal：到货登记（日期）/ 托号 / szemlés 箱（管理）&lt;br&gt;· APP：收货 → 码垛 → 移库（包裹级）→ 托盘放行&lt;br&gt;· ★箱号 / 袋号 / 托盘号 ｜ ★车次（车牌）+ 装载清单&lt;br&gt;· ★箱级海关属性（vám jelleg：Szemlés / Tervezett / Kiadható）&lt;br&gt;· 物流数据 → Client API（规划）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="560" y="880" width="860" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="b17" value="&lt;b&gt;台账（Excel + Drive）&lt;/b&gt;&lt;br&gt;· Excel：序号 / ETA /&lt;br&gt;　决定书号 / 关税 / VAT /&lt;br&gt;　银行日期&lt;br&gt;· Drive：MAWB / 清单 /&lt;br&gt;　放行和支付文件（副本）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="560" y="1210" width="420" height="220" as="geometry" />
-        </mxCell>
-        <mxCell id="b18" value="&lt;b&gt;GiTa（报关状态 · 外包商）&lt;/b&gt;&lt;br&gt;· 报关状态（NAV →&lt;br&gt;　befogadta / átengedte）&lt;br&gt;· 包裹码 / 袋号 / 仓库 /&lt;br&gt;　承运商&lt;br&gt;· MRN（副本）&lt;br&gt;· kezelo 导出（06）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1000" y="1210" width="420" height="220" as="geometry" />
-        </mxCell>
-        <mxCell id="g19" value="④ CECZ · Vác（智能仓线 · Levelwise / 集成体系）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=6 4;align=left;verticalAlign=top;fontSize=15;fontStyle=1;spacingLeft=10;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="1460" y="560" width="1520" height="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="b20" value="&lt;b&gt;Client API（运营中枢 · Levelwise）&lt;/b&gt;&lt;br&gt;· 进出订单 / SKU 主数据 / 库存&lt;br&gt;· 包裹 / 承运面单（GLS 等）/ 包装耗材&lt;br&gt;· 对接：Régens 申报数据（◐）　｜　SHEIN API 回传（规划）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="620" width="1480" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b21" value="&lt;b&gt;Octopus 8（ERP）&lt;/b&gt;&lt;br&gt;· 收货单 / 仓库收发&lt;br&gt;· 内部使用（belső felhasználás）&lt;br&gt;· 财务（发票 / 审批 / 银行 / 现金）&lt;br&gt;· RF：虚拟托 → 上架&lt;br&gt;· API 客户端消息 ↔ Wayzim" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="900" width="720" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="b22" value="&lt;b&gt;Wayzim WMS（智能仓执行）&lt;/b&gt;&lt;br&gt;· 入库 / 出库订单（ERP 接口推送）&lt;br&gt;· 库位 / 库存 / 补货 / 空箱&lt;br&gt;· PDA 任务&lt;br&gt;· WCS / RCS / AGV / PTL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2220" y="900" width="740" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="b23" value="&lt;b&gt;IWMS（京东线）&lt;/b&gt;&lt;br&gt;· unload → receive → putaway&lt;br&gt;· pick → recheck → pack → handover&lt;br&gt;· POD ｜ 对接 JD 系统（iFOP / DC）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="1240" width="720" height="220" as="geometry" />
-        </mxCell>
-        <mxCell id="b24" value="&lt;b&gt;Shipment Tracker（Levelwise）&lt;/b&gt;&lt;br&gt;· 航班登记（AWB / 到达）&lt;br&gt;· 运输状态流（排程 → … → 发运）&lt;br&gt;· loginfo@cecz.eu 邮件自动挂接" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2220" y="1240" width="740" height="220" as="geometry" />
-        </mxCell>
-        <mxCell id="g25" value="⑤ 辅助系统与输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=6 4;align=left;verticalAlign=top;fontSize=15;fontStyle=1;spacingLeft=10;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1600" width="2920" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="b26" value="&lt;b&gt;Site-Manager&lt;/b&gt;&lt;br&gt;· 进场预约（按装卸计划）&lt;br&gt;· Kapujegy（车牌出入）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1660" width="520" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="b27" value="&lt;b&gt;Container Manager&lt;/b&gt;&lt;br&gt;· 班列 / 集装箱&lt;br&gt;· 到达 / 提货（车牌）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="600" y="1660" width="520" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="b28" value="&lt;b&gt;Return handler&lt;/b&gt;&lt;br&gt;· 退货单 / 清单导入&lt;br&gt;· ECSC 逐件扫描" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="1660" width="520" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="b29" value="&lt;b&gt;CMS（海关 / 财务模型）&lt;/b&gt;&lt;br&gt;· 申报 / 税 / 保证金&lt;br&gt;·（账号无权限 ◐）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1680" y="1660" width="520" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="b30" value="&lt;b&gt;SHEIN 接收端（回传通道）&lt;/b&gt;&lt;br&gt;· 规划：#273 B2B / #216 B2C（系统回传）&lt;br&gt;· 现状：清关文件人工上传（financial portal）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2220" y="1660" width="740" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="e31" value="预告 / 清单（邮件）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;" edge="1" parent="1" source="b7" target="b15">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1825" y="510" />
-              <mxPoint x="990" y="510" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e32" value="预告（邮件）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;" edge="1" parent="1" source="b6" target="b15">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1115" y="600" />
-              <mxPoint x="990" y="600" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e33" value="到货 / 装板（邮件）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;" edge="1" parent="1" source="b10" target="b15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e34" value="szemle / 清关文件（邮件）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;" edge="1" parent="1" source="b12" target="b15">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="520" y="1210" />
-              <mxPoint x="520" y="770" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e35" value="申报 / 放行（◐）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1B5E20;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b11" target="b12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e36" value="登记 / 通知（人工）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;startArrow=classic;" edge="1" parent="1" source="b15" target="b16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e37" value="归档 / 补行（07 · 测试中）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1565C0;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="b15" target="b17">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="545" y="800" />
-              <mxPoint x="545" y="1345" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e38" value="状态转录（人工）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;" edge="1" parent="1" source="b15" target="b18">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1442" y="720" />
-              <mxPoint x="1442" y="1345" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e39" value="kezelo 导出 / 导入（06）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1565C0;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="b18" target="b20">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1452" y="1345" />
-              <mxPoint x="1452" y="780" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e40" value="订单 / 清单（文件）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8710A;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=3 3;" edge="1" parent="1" source="b8" target="b20">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2565" y="560" />
-              <mxPoint x="2220" y="560" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e41" value="订单 / 库存（集成）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1B5E20;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b20" target="b21">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1850" y="880" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e42" value="API 客户端消息" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1B5E20;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;startArrow=classic;" edge="1" parent="1" source="b21" target="b22">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e43" value="任务 / 库存" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1B5E20;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b22" target="b23">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2590" y="1220" />
-              <mxPoint x="1840" y="1220" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e44" value="回传 #273 / #216（规划）" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#9E9E9E;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=1 4;" edge="1" parent="1" source="b20" target="b30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="3000" y="740" />
-              <mxPoint x="3000" y="1770" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="b45" value="系统归属：ParStock → Régens（Ghibli 使用）｜ Client API · Tracker · CMS → CECZ·Vác（Levelwise 开发）｜ 智能仓（Wayzim WMS / WCS / RCS）→ Wayzim ｜ Octopus 8 → CECZ·Vác（厂商 ✗ 待补）｜ GiTa → Ghibli（外包商维护 · 待替代）｜ Google → Google&lt;br&gt;权威源速查：MRN / e-Vám / 决定书 / 税额 ← NAV（经 Gemeric 流转）｜ 箱 / 袋 / 托 / 车次 ← ParStock ｜ 订单 / 库存 / SKU / 面单 ← Client API（智能仓）｜ 航班 / 运输 / 邮件单据 ← Tracker ｜ 邮件 = 一手事件源&lt;br&gt;待确认 ✗：ParStock 的 vám jelleg 整理人 ｜ Portal 登记信息来源 ｜ Régens → Client API 数据归属 ｜ 10.12 后 B2B 文件来源（详见项目文档）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=12.5;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1950" width="2920" height="110" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="pg-② BUD 航空线 · 阶段流程" name="② BUD 航空线 · 阶段流程">
-    <mxGraphModel dx="2200" dy="1200" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3060" pageHeight="860" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="b2" value="一票提单的旅程（SHEIN / TEMU · BUD 航空进口）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=20;align=left;verticalAlign=top;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="2980" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="b3" value="箭头 ＝ 阶段先后 ｜ 每格：事件 / 系统 / 数据 / 方式 ｜ ✅ 已核实 ｜ ◐ 部分确认（详见总图脚注）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="78" width="2980" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b4" value="&lt;b&gt;M1 预告到达&lt;/b&gt;&lt;br&gt;系统：公共邮箱（Cainiao / 4PX / TEMU）&lt;br&gt;数据：MAWB · 清单（manifest）· 下载链接&lt;br&gt;方式：邮件（人工阅读）　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b5" value="&lt;b&gt;M2 入库登记&lt;/b&gt;&lt;br&gt;系统：ParStock Portal（Ghibli 管理岗）&lt;br&gt;数据：入库单（MAWB / 航班 / 件重 / 到货通知）&lt;br&gt;方式：人工登记（来源 ◐）　◐" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="580" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b6" value="&lt;b&gt;M3 航班到达 / 装板&lt;/b&gt;&lt;br&gt;系统：航司 / 地服（Menzies·AS·Celebi）&lt;br&gt;数据：实际到达 · 装板 / BUP 清单&lt;br&gt;方式：邮件 + 系统　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b7" value="&lt;b&gt;M4 收货 / 码垛（RF）&lt;/b&gt;&lt;br&gt;系统：ParStock APP&lt;br&gt;数据：箱级 Beérkezett · 托盘号 · vám jelleg&lt;br&gt;方式：扫码作业　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b8" value="&lt;b&gt;M5 查验（szemle）&lt;/b&gt;&lt;br&gt;系统：Gemeric / NAV 清单 + ParStock 移库&lt;br&gt;数据：szemle 清单 · e-Vám azonosító · 包裹换箱&lt;br&gt;方式：人工协调　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b9" value="&lt;b&gt;M6 申报 / 放行&lt;/b&gt;&lt;br&gt;系统：NAV（经 Gemeric 处理）&lt;br&gt;数据：MRN · 放行（átengedte）· határozat · 税额&lt;br&gt;方式：申报系统（通道 ◐）　◐" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b10" value="&lt;b&gt;M7 清关完成邮件&lt;/b&gt;&lt;br&gt;系统：公共邮箱（Ghibli 清关组）&lt;br&gt;数据：határozat / e-vám igazolás 附件 · 放行通知&lt;br&gt;方式：人工分发（模板固定）　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="580" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b11" value="&lt;b&gt;M8 台账归档&lt;/b&gt;&lt;br&gt;系统：07 自动化 → Google Drive + Excel&lt;br&gt;数据：决定书号 · 关税 / VAT · 银行日期 · 文件副本&lt;br&gt;方式：自动化（测试中）　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b12" value="&lt;b&gt;M9 拣货 / 装车&lt;/b&gt;&lt;br&gt;系统：ParStock Portal（车次）→ APP（托盘放行）&lt;br&gt;数据：Kiadható 托盘 · 装载清单（rakodási lista）&lt;br&gt;方式：扫码 + 排程　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b13" value="&lt;b&gt;M10 状态 / 回传&lt;/b&gt;&lt;br&gt;系统：GiTa（状态）→ Tracker（kezelo）→ SHEIN（规划）&lt;br&gt;数据：报关状态 · MRN 副本 · #273 / #216 回传&lt;br&gt;方式：人工 + 规划　◐" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b4" target="b5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b5" target="b6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b6" target="b7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b7" target="b8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b8" target="b9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2460" y="435" />
-              <mxPoint x="300" y="435" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b9" target="b10">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b10" target="b11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b11" target="b12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b12" target="b13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="b23" value="范围：BUD 航空进口（SHEIN / TEMU B2B）｜ 待确认 ✗：vám jelleg 整理人、Portal 登记来源、10.12 后 B2B 文件来源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="760" width="2980" height="70" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="pg-③ Vác 智能仓线 · 阶段流程" name="③ Vác 智能仓线 · 阶段流程">
-    <mxGraphModel dx="2200" dy="1200" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3060" pageHeight="860" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="b2" value="Vác 智能仓的履约流程（JD 线上架 / 出库 / 发运）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=20;align=left;verticalAlign=top;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="2980" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="b3" value="箭头 ＝ 阶段先后 ｜ 每格：事件 / 系统 / 数据 / 方式 ｜ ✅ 已核实 ｜ ◐ 部分确认（详见总图脚注）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="78" width="2980" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b4" value="&lt;b&gt;N1 订单接收&lt;/b&gt;&lt;br&gt;系统：JD 平台（iFOP / DC / ighub）&lt;br&gt;数据：PI / SO 号 · Crossdock 清单 · 导出&lt;br&gt;方式：人工下载　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b5" value="&lt;b&gt;N2 订单录入&lt;/b&gt;&lt;br&gt;系统：Client API（文件上传 / SKU / 库存）&lt;br&gt;数据：入库订单 · SKU 主数据 · 库存上传&lt;br&gt;方式：文件导入　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="580" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b6" value="&lt;b&gt;N3 到货&lt;/b&gt;&lt;br&gt;系统：Container Manager · Site-Manager&lt;br&gt;数据：班列 / 集装箱到达 · 门岗（车牌）· 预约&lt;br&gt;方式：人工登记　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b7" value="&lt;b&gt;N4 收货（RF）&lt;/b&gt;&lt;br&gt;系统：Octopus 8（虚拟托）／ IWMS（JD）&lt;br&gt;数据：收货单 · 逐件扫描 · 差异记录&lt;br&gt;方式：扫码作业　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b8" value="&lt;b&gt;N5 上架&lt;/b&gt;&lt;br&gt;系统：Octopus →（API 消息）→ Wayzim WMS&lt;br&gt;数据：库位分配 · AGV / 堆垛机任务&lt;br&gt;方式：系统对接　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="180" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b9" value="&lt;b&gt;N6 存储 / 库存&lt;/b&gt;&lt;br&gt;系统：Wayzim（库存 / 补货）· Client API（视图）&lt;br&gt;数据：库位 · 库存 · 补货 · 空箱&lt;br&gt;方式：系统 + 系统　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b10" value="&lt;b&gt;N7 出库订单&lt;/b&gt;&lt;br&gt;系统：Client API / ERP 推送 → Wayzim（或 IWMS）&lt;br&gt;数据：出库任务 · 批次 / 效期 · 拣选位&lt;br&gt;方式：系统　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="580" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b11" value="&lt;b&gt;N8 拣选 / 打包&lt;/b&gt;&lt;br&gt;系统：Wayzim PDA / PTL（Stock）｜ IWMS（JD 线）&lt;br&gt;数据：拣选明细 · recheck · 装箱 · 耗材&lt;br&gt;方式：扫码作业　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b12" value="&lt;b&gt;N9 交接发运&lt;/b&gt;&lt;br&gt;系统：IWMS handover · 快递（GLS 等）&lt;br&gt;数据：面单 · 手工交接 · POD&lt;br&gt;方式：系统 + 人工　✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="b13" value="&lt;b&gt;N10 账务 / 单据&lt;/b&gt;&lt;br&gt;系统：Octopus 财务 · 邮件 → Tracker · CMS&lt;br&gt;数据：发票 / 审批 · 单据挂接 · 税 / 保证金（模型）&lt;br&gt;方式：系统 + 邮件　◐" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="500" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b4" target="b5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b5" target="b6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b6" target="b7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b7" target="b8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b8" target="b9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2460" y="435" />
-              <mxPoint x="300" y="435" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b9" target="b10">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b10" target="b11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b11" target="b12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;fontSize=12;strokeWidth=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="b12" target="b13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="b23" value="范围：Vác 智能仓（JD / 电商履约）｜ 待确认 ✗：Client API 与 IWMS 的职责边界、Octopus 厂商（详见项目文档）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="40" y="760" width="2980" height="70" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="YdOg_M0aXD5KoMKlmoG1" name="第 4 页">
-    <mxGraphModel dx="1464" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="cecz-research">
+  <diagram id="YdOg_M0aXD5KoMKlmoG1" name="总图 Overview">
+    <mxGraphModel dx="1886" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="hM-t-39g9F1XuVJHZkup-6" edge="1" parent="1" source="VT9brEUHvsbMnGreCTo1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hM-t-39g9F1XuVJHZkup-7" connectable="0" parent="hM-t-39g9F1XuVJHZkup-6" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="&lt;div&gt;Cargo arraival notice&lt;/div&gt;&lt;div&gt;BUP List&lt;/div&gt;&lt;div&gt;Advise of Arrival&lt;/div&gt;" vertex="1">
+        <mxCell id="hM-t-39g9F1XuVJHZkup-7" connectable="0" parent="hM-t-39g9F1XuVJHZkup-6" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="&lt;div&gt;Cargo arrival notice&lt;/div&gt;&lt;div&gt;BUP List&lt;/div&gt;&lt;div&gt;Advise of Arrival&lt;/div&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.0996" y="-4" as="geometry">
             <mxPoint x="207" y="-26" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VT9brEUHvsbMnGreCTo1-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;Airport&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="3490" y="430" as="geometry" />
+          <mxGeometry height="60" width="120" x="2220" y="290" as="geometry" />
         </mxCell>
         <mxCell id="VCH83e4zB695VIdFFYWy-5" edge="1" parent="1" source="VCH83e4zB695VIdFFYWy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;align=left;dashed=1;fontColor=#000000;" target="NAH4BfAPdhthefW3lyZl-26" value="&lt;div align=&quot;left&quot;&gt;3x PDF&lt;br&gt;Határozat 海关决定书&lt;br&gt;Áruátengedési okmány 放行文件&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;igazolás 清关证明&lt;/div&gt;">
           <mxGeometry relative="1" x="-0.1765" y="50" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="3339.999999999999" y="569.9999999999998" as="targetPoint" />
+            <mxPoint x="2069.999999999999" y="429.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VCH83e4zB695VIdFFYWy-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;NAV&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="3490" y="540" as="geometry" />
+          <mxGeometry height="60" width="120" x="2220" y="400" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-36" edge="1" parent="1" source="VCH83e4zB695VIdFFYWy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="VCH83e4zB695VIdFFYWy-2">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3350" y="750" as="sourcePoint" />
+            <mxPoint x="2080" y="610" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NAH4BfAPdhthefW3lyZl-37" connectable="0" parent="NAH4BfAPdhthefW3lyZl-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="Custm Request" vertex="1">
+        <mxCell id="NAH4BfAPdhthefW3lyZl-37" connectable="0" parent="NAH4BfAPdhthefW3lyZl-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="Custom Request" vertex="1">
           <mxGeometry relative="1" x="-0.2812" y="-3" as="geometry">
             <mxPoint x="76" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VCH83e4zB695VIdFFYWy-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=18;" value="Gemeric&lt;br&gt;（GitaVam）" vertex="1">
-          <mxGeometry height="80" width="170" x="2980" y="700" as="geometry" />
+          <mxGeometry height="80" width="170" x="1710" y="560" as="geometry" />
         </mxCell>
-        <mxCell id="NAH4BfAPdhthefW3lyZl-15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;align=left;fontSize=13;fontFamily=Times New Roman;dashed=1;" value="&lt;div&gt;AWB pre-alarts&lt;/div&gt;&lt;div&gt;NAV PDFs&lt;/div&gt;">
+        <mxCell id="NAH4BfAPdhthefW3lyZl-15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;align=left;fontSize=13;fontFamily=Times New Roman;dashed=1;" value="&lt;div&gt;AWB pre-alerts&lt;/div&gt;&lt;div&gt;NAV PDFs&lt;/div&gt;">
           <mxGeometry relative="1" x="-0.1111" y="10" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="2800.000000000001" y="602" as="sourcePoint" />
-            <mxPoint x="2800.000000000001" y="662.0000000000002" as="targetPoint" />
+            <mxPoint x="1530.000000000001" y="462" as="sourcePoint" />
+            <mxPoint x="1530.000000000001" y="522.0000000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-24" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-20">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2690" y="570" />
-              <mxPoint x="2690" y="825" />
+              <mxPoint x="1420" y="430" />
+              <mxPoint x="1420" y="685" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -404,7 +57,7 @@
             <mxPoint x="-73" y="105" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hM-t-39g9F1XuVJHZkup-14" connectable="0" parent="NAH4BfAPdhthefW3lyZl-24" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="pre-alarts" vertex="1">
+        <mxCell id="hM-t-39g9F1XuVJHZkup-14" connectable="0" parent="NAH4BfAPdhthefW3lyZl-24" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="Pre-alerts" vertex="1">
           <mxGeometry relative="1" x="-0.1121" y="3" as="geometry">
             <mxPoint x="-73" y="242" as="offset" />
           </mxGeometry>
@@ -412,19 +65,19 @@
         <mxCell id="hM-t-39g9F1XuVJHZkup-13" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-19">
           <mxGeometry relative="1" x="0.0377" as="geometry">
             <Array as="points">
-              <mxPoint x="2690" y="570" />
-              <mxPoint x="2690" y="960" />
+              <mxPoint x="1420" y="430" />
+              <mxPoint x="1420" y="820" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=14;" value="Ghibli public Email" vertex="1">
-          <mxGeometry height="60" width="140" x="2730" y="540" as="geometry" />
+          <mxGeometry height="60" width="140" x="1460" y="400" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=18;" value="&lt;div&gt;Regens&lt;/div&gt;&lt;div&gt;Parstock&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="170" x="2980" y="960" as="geometry" />
+          <mxGeometry height="80" width="170" x="1710" y="820" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=14;" value="Google drive / Excel" vertex="1">
-          <mxGeometry height="60" width="140" x="2730" y="660" as="geometry" />
+          <mxGeometry height="60" width="140" x="1460" y="520" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-22" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;" target="NAH4BfAPdhthefW3lyZl-19">
           <mxGeometry relative="1" as="geometry" />
@@ -433,13 +86,13 @@
           <mxGeometry relative="1" x="-0.1666" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=22;" value="Client API" vertex="1">
-          <mxGeometry height="80" width="190" x="2130" y="960" as="geometry" />
+          <mxGeometry height="80" width="190" x="860" y="820" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=18;" value="Shipment Tracker" vertex="1">
-          <mxGeometry height="80" width="160" x="2430" y="940" as="geometry" />
+          <mxGeometry height="80" width="160" x="1160" y="800" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontFamily=Times New Roman;fontSize=18;" value="Customs Management System" vertex="1">
-          <mxGeometry height="70" width="160" x="2430" y="790" as="geometry" />
+          <mxGeometry height="70" width="160" x="1160" y="650" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-27" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;dashed=1;" target="NAH4BfAPdhthefW3lyZl-4" value="NAV PDFs">
           <mxGeometry relative="1" as="geometry" />
@@ -453,13 +106,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fontFamily=Times New Roman;fontSize=14;" value="Ghibli Customs Clearance Team" vertex="1">
-          <mxGeometry height="80" width="170" x="2980" y="530" as="geometry" />
+          <mxGeometry height="80" width="170" x="1710" y="390" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-31" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="NAH4BfAPdhthefW3lyZl-26">
           <mxGeometry relative="1" x="0.0014" as="geometry">
             <Array as="points">
-              <mxPoint x="3740" y="510" />
-              <mxPoint x="3065" y="510" />
+              <mxPoint x="2470" y="370" />
+              <mxPoint x="1795" y="370" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -469,70 +122,70 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;BANK&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="3680" y="540" as="geometry" />
+          <mxGeometry height="60" width="120" x="2410" y="400" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-39" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-4">
           <mxGeometry relative="1" x="0.0275" as="geometry">
             <Array as="points">
-              <mxPoint x="1760" y="520" />
-              <mxPoint x="2800" y="520" />
+              <mxPoint x="490" y="380" />
+              <mxPoint x="1530" y="380" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hM-t-39g9F1XuVJHZkup-1" connectable="0" parent="NAH4BfAPdhthefW3lyZl-39" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="&lt;div align=&quot;left&quot;&gt;MAWB 主单&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Invoice Excel/pdf&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Packing List 装箱单&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.9598" y="-5" as="geometry">
-            <mxPoint x="-11" y="-35" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hM-t-39g9F1XuVJHZkup-2" connectable="0" parent="NAH4BfAPdhthefW3lyZl-39" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="&lt;div align=&quot;left&quot;&gt;MAWB 主单&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Invoice Excel/pdf&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Packing List 装箱单&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Good List&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.9598" y="-5" as="geometry">
-            <mxPoint x="-16" y="131" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hM-t-39g9F1XuVJHZkup-4" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VCH83e4zB695VIdFFYWy-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2620" y="520" />
-              <mxPoint x="2620" y="740" />
+              <mxPoint x="1350" y="380" />
+              <mxPoint x="1350" y="600" />
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="hM-t-39g9F1XuVJHZkup-31" connectable="0" parent="hM-t-39g9F1XuVJHZkup-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="Pre-alerts" vertex="1">
+          <mxGeometry relative="1" x="0.9277" y="-3" as="geometry">
+            <mxPoint x="11" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hM-t-39g9F1XuVJHZkup-32" connectable="0" parent="hM-t-39g9F1XuVJHZkup-4" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Times New Roman;" value="&lt;div&gt;MAWB 主单&lt;/div&gt;&lt;div&gt;Invoice Excel/pdf&lt;/div&gt;&lt;div&gt;Packing List 装箱单&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.9668" y="1" as="geometry">
+            <mxPoint x="-20" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontSize=14;fontFamily=Times New Roman;" value="&lt;font&gt;SHEIN&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1670" y="490" as="geometry" />
+          <mxGeometry height="60" width="120" x="400" y="350" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-41" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-4">
           <mxGeometry relative="1" x="-0.025" as="geometry">
             <Array as="points">
-              <mxPoint x="1910" y="690" />
-              <mxPoint x="1910" y="520" />
-              <mxPoint x="2800" y="520" />
+              <mxPoint x="640" y="550" />
+              <mxPoint x="640" y="380" />
+              <mxPoint x="1530" y="380" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NAH4BfAPdhthefW3lyZl-42" connectable="0" parent="NAH4BfAPdhthefW3lyZl-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;Pre-alarts&lt;/font&gt;" vertex="1">
+        <mxCell id="NAH4BfAPdhthefW3lyZl-42" connectable="0" parent="NAH4BfAPdhthefW3lyZl-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;Pre-alerts&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="0.8067" y="8" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hM-t-39g9F1XuVJHZkup-5" connectable="0" parent="NAH4BfAPdhthefW3lyZl-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;Pre-alarts&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.8067" y="8" as="geometry">
-            <mxPoint x="226" y="248" as="offset" />
+        <mxCell id="hM-t-39g9F1XuVJHZkup-33" connectable="0" parent="NAH4BfAPdhthefW3lyZl-41" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontFamily=Times New Roman;fontSize=13;" value="&lt;div&gt;MAWB 主单&lt;/div&gt;&lt;div&gt;Invoice Excel/pdf&lt;/div&gt;&lt;div&gt;Packing List 装箱单&lt;/div&gt;&lt;div&gt;Good List&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.9249" y="-2" as="geometry">
+            <mxPoint x="-41" y="-35" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontSize=14;fontFamily=Times New Roman;" value="TEMU" vertex="1">
-          <mxGeometry height="60" width="120" x="1670" y="660" as="geometry" />
+          <mxGeometry height="60" width="120" x="400" y="520" as="geometry" />
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-46" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1910" y="860" />
-              <mxPoint x="1910" y="520" />
-              <mxPoint x="2800" y="520" />
+              <mxPoint x="640" y="720" />
+              <mxPoint x="640" y="380" />
+              <mxPoint x="1530" y="380" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="NAH4BfAPdhthefW3lyZl-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontSize=14;fontFamily=Times New Roman;" value="Cainiao" vertex="1">
-          <mxGeometry height="60" width="120" x="1670" y="830" as="geometry" />
+          <mxGeometry height="60" width="120" x="400" y="690" as="geometry" />
         </mxCell>
         <mxCell id="hM-t-39g9F1XuVJHZkup-3" edge="1" parent="1" source="NAH4BfAPdhthefW3lyZl-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="NAH4BfAPdhthefW3lyZl-6">
           <mxGeometry relative="1" as="geometry" />
@@ -540,32 +193,34 @@
         <mxCell id="hM-t-39g9F1XuVJHZkup-9" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" x="-0.5852" as="geometry">
             <Array as="points">
-              <mxPoint x="1980" y="400" />
-              <mxPoint x="1620" y="400" />
-              <mxPoint x="1620" y="1422" />
+              <mxPoint x="710" y="260" />
+              <mxPoint x="350" y="260" />
+              <mxPoint x="350" y="1282" />
             </Array>
-            <mxPoint x="1980" y="1422" as="sourcePoint" />
-            <mxPoint x="1990" y="1422" as="targetPoint" />
+            <mxPoint x="710" y="1282" as="sourcePoint" />
+            <mxPoint x="720" y="1282" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hM-t-39g9F1XuVJHZkup-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Times New Roman;fontSize=32;" value="Customers" vertex="1">
-          <mxGeometry height="50" width="200" x="1620" y="400" as="geometry" />
+          <mxGeometry height="50" width="200" x="350" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="hM-t-39g9F1XuVJHZkup-28" edge="1" parent="1" source="hM-t-39g9F1XuVJHZkup-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="NAH4BfAPdhthefW3lyZl-6">
+        <mxCell id="hM-t-39g9F1XuVJHZkup-28" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" x="0.0909" as="geometry">
             <Array as="points">
-              <mxPoint x="3220" y="910" />
-              <mxPoint x="3220" y="980" />
+              <mxPoint x="1950" y="790" />
+              <mxPoint x="1950" y="860" />
             </Array>
+            <mxPoint x="2030" y="790" as="sourcePoint" />
+            <mxPoint x="1880" y="860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hM-t-39g9F1XuVJHZkup-29" connectable="0" parent="hM-t-39g9F1XuVJHZkup-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Flight arrival records&lt;/div&gt;&lt;div&gt;Inbound records&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry relative="1" x="0.1615" y="2" as="geometry">
-            <mxPoint x="-2" y="-78" as="offset" />
+            <mxPoint x="58" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hM-t-39g9F1XuVJHZkup-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fontFamily=Times New Roman;fontSize=14;" value="Cargo Terminal Operators" vertex="1">
-          <mxGeometry height="80" width="170" x="3300" y="870" as="geometry" />
+          <mxGeometry height="80" width="170" x="2030" y="730" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
